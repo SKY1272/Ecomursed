@@ -1,12 +1,14 @@
 import React from 'react'
 import singer from './assets/singer.png'
+import './about.css'
+import { FaFacebook, FaYoutube, FaSpotify } from 'react-icons/fa';
 function About() {
   return (
-    <div className='container'>
+    <div className='Container'>
       <div className="header">
         <h1>The Generics</h1>
       </div>
-      <div className="main">
+      <div className="content">
         <p>
           Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of sorrows,
           hates no prosecutors will unfold in the enduring of which were born in it?
@@ -25,13 +27,21 @@ function About() {
           it is often one of us, however, have any! Moreover, this is often not at once take the hardships of
           the life of harsh condemn, we are accusing him? Him whom something large
         </p>
-        <img src={singer} alt='singer' width='200' />
+        <img src={singer} alt='singer' width='300' height='300' />
       </div>
       <div className="footer">
-        <h2>The Generics</h2>
-        <h3>Facebook</h3>
-        <h3>Youtube</h3>
-        <h3>spotify</h3>
+      <h2>The Generics</h2>
+        <div className="footer-icons">
+        <a href="https://www.facebook.com/your-facebook-page-url" target="_blank" rel="noopener noreferrer">
+      <FaFacebook size={30} color="blue" />
+    </a>
+    <a href="https://www.youtube.com/your-youtube-channel-url" target="_blank" rel="noopener noreferrer">
+      <FaYoutube size={30} color="red" />
+    </a>
+    <a href="https://www.spotify.com/your-spotify-channel-url" target="_blank" rel="noopener noreferrer">
+      <FaSpotify size={30} color="green" />
+    </a>
+        </div>
       </div>
     </div>
   )
